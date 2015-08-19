@@ -1,0 +1,21 @@
+/* CSS Document */
+body{
+	/* background-color:#CCC; */
+	
+	
+	/*
+	 * Internet Explorer 10 并没有对 屏幕的宽度 和 视口（viewport）的宽度 进行区分，这就导致 Bootstrap 中的媒体查询并不能很好的发挥作用。为了解决这个问题，你可以引入下面列出的这段 CSS 代码暂时修复此问题
+	 */
+	@-ms-viewport { width: device-width; }
+	
+	/*
+	 * 然而，这样做并不能对 Windows Phone 8 Update 3 (a.k.a. GDR3) 版本之前的设备起作用，由于这样做将导致 Windows Phone 8 设备按照桌面浏览器的方式呈现页面，而不是较窄的“手机”呈现方式
+	 * 为了解决这个问题，还需要加入以下 CSS 和 JavaScript 代码来化解此问题。
+	 */	
+	@-webkit-viewport   { width: device-width; }
+	@-moz-viewport      { width: device-width; }
+	@-ms-viewport       { width: device-width; }
+	@-o-viewport        { width: device-width; }
+	@viewport           { width: device-width; }
+}
+
