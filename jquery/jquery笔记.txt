@@ -1,0 +1,38 @@
+
+jQurey库包含的功能:
+HTML元素选取
+HTML元素操作
+CSS操作
+HTML事件函数
+JavaScript特效和动画
+HTMLDom遍历和修改
+Ajax
+Utilities工具类
+
+jQuery引入
+1.从jquery.com下载
+2.从CDN中加载
+
+版本介绍:
+v1.11.1:1.x支持IE6+
+V2.1.1:2.x支持IE9+   不支持IE6
+
+API:
+http://api.jquery.com/
+中文API:
+http://www.css88.com/jqapi-1.9/
+http://jquery.cuishifeng.cn/
+http://www.jquery123.com/
+
+jQuery基础语法
+基础语法: $(selector).action()
+美元符号定义jQuery
+选择符(selector) 用来 "查询"和"查找"HTML元素
+jQuery的action()执行对元素的操作
+例如:
+$(this).hide() - 隐藏当前元素
+$("p").hide() - 隐藏所有段落
+
+jquery选择器
+
+
