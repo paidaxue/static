@@ -60,3 +60,20 @@ on和off完全代替bind和unbind
 
 自定义事件
 
+
+
+
+jQuery HTML DOM - 用来添加,删除,修改元素
+jQuery HTML DOM捕获
+jQuery设置
+jQuery添加元素
+jQuery删除元素
+
+
+jQuery HTML DOM捕获
+text()
+html()
+val()
+attr("href")
+
+
