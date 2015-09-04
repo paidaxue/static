@@ -56,4 +56,6 @@ jquery事件:
 .bind  .unbind
 on和off完全代替bind和unbind
 
+事件目标和冒泡
+
 
