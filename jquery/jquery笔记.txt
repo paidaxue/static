@@ -52,5 +52,8 @@ jquery事件:
 
 常用的事件方法
 
+绑定事件-解除绑定
+.bind  .unbind
+on和off完全代替bind和unbind
 
 
