@@ -82,3 +82,19 @@ jQuery HTML DOM设置
 jQuery HTML DOM添加元素
 
 jQuery HTML DOM删除元素
+
+
+
+
+jquery的效果:
+隐藏/显示
+淡入淡出
+滑动
+动画
+停止动画
+jquery callback
+jquery chaining
+
+jquery的效果:隐藏/显示
+
+
