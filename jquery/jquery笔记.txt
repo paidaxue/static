@@ -101,8 +101,13 @@ jquery的效果:淡入淡出
 
 jquery的效果:滑动
 
-
 jquery的效果:callback
 
 
+
+
+
+jQuery Ajax
+
+jQuery Ajax异步访问
 
