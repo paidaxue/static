@@ -116,3 +116,14 @@ jQuery Ajax加载片段
 
 
 jQuery 扩展
+
+jQuery 扩展方法:noconflict
+如果其他js框架也用$作为简写,会出现冲突,整个程序会报错
+noconflict就是用来代替$,防止报错
+
+
+
+
+
+
+
