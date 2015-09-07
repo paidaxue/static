@@ -122,6 +122,9 @@ jQuery 扩展方法:noconflict
 noconflict就是用来代替$,防止报错
 
 
+jQuery方法
+jQuery盒子模型
+
 
 
 
