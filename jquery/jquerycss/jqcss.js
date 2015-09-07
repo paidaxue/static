@@ -30,9 +30,10 @@ $(document).ready(function(){
 		$(this).removeClass("style2");
 	});
 	
-	$("#div3").addClass("style3");
+	//style3应该定义在style2后面,反过来没反应
+	$("#div3").addClass("style2");
 	$("#div3").click(function(){
-		$(this).toggleClass("style2");
+		$(this).toggleClass("style3");
 	});
 	
 	
