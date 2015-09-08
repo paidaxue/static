@@ -125,6 +125,12 @@ noconflict就是用来代替$,防止报错
 jQuery方法
 jQuery盒子模型
 
+jQuery遍历
+
+jQuery遍历-向下遍历
+children
+find
+
 
 
 
