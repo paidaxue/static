@@ -145,3 +145,20 @@ jQuery遍历-同级遍历
  * prev()
  * preAll()
  * preUntil()
+ 
+jQuery遍历-过滤
+ * first()
+ * last()
+ * eq()
+ * filter()
+ * not()
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
