@@ -12,12 +12,56 @@ $(document).ready(function(){
 	//监听winwow的load事件
 	$(window).on("load",function(){
 		imgLocation();
-	});
-	
-	
-	
-	
+		
+		//模拟网络获取的图片,形式为json
+		var dataImg = {"data":[{"src":"1.jpg"},{"src":"2.jpg"},{"src":"3.jpg"},{"src":"4.jpg"},{"src":"5.jpg"}]};
+		
+		//监听鼠标滚动时间
+		//判断:最后一张图片加载到一半时加载
+		window.onscroll = function(){
+			
+			//满足条件的时候,加载图片
+			if(scrollside()){
+				
+				//遍历dataImg,index是放的位置,value是具体的数值
+				$.each(dataImg.data,function(index,value){
+					
+					//动态创建,先创建box对象,追加在<div id="container">中
+					var box = $("<div>").addClass("box").appendTo($("#container"));
+					
+					//在box中创建对象,追加在<div class="box">中
+					var content = $("<div>").addClass("content").appendTo(box);
+					
+					
+					//console.log("./img/"+$(value).attr("src"));
+					//在content中创建图片对象,追加在<div class="content">中
+					$("<img>").attr("src","./img/"+$(value).attr("src")).appendTo(content);
+				});
+				//使添加的元素遵循imgLocation的排列规则
+				imgLocation();
+			}
+		};
+	});	
 });
+
+function scrollside(){
+	//
+	var box = $(".box");
+	
+	//得到最后一张图片的总体高度
+	//box.last().get(0).offsetTop当前盒子顶端的高度 + 后面本盒子的高度
+	var lastboxHeight = box.last().get(0).offsetTop+Math.floor(box.last().height()/2);
+	
+	//当前容器的高度
+	var documentHeight  = $(document).width();
+	
+	//鼠标滚动的高度
+	var scrollHeight = $(window).scrollTop();
+	
+	//当鼠标滚动的高度加上容器的高度,大于最后一张图片的高度这个边界时,返回true,允许加载接下来的图片
+	return (lastboxHeight<scrollHeight+documentHeight)?true:false;
+}
+
 
 /**
  * 
