@@ -137,4 +137,11 @@ jQuery遍历-向上遍历
  * parentUntil()	在两个类层级之间遍历
 
 
-
+jQuery遍历-同级遍历
+ * sibings()
+ * next()
+ * nextAll()
+ * nextUntil()
+ * prev()
+ * preAll()
+ * preUntil()
