@@ -1,0 +1,696 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0054)http://news.baidu.com/static/channel/ui/html/bdhx.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>百度和讯财经行情</title>
+<script type="text/javascript" src="usermonitor.js"></script>
+<script type="text/javascript" language="javascript">
+var p = UserMonitor.send;
+</script>
+<style type="text/css">* {
+    margin:0;
+    padding:0;
+}
+a  img {
+    border:0;
+}
+.clear {
+    clear:both;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:12px;
+}
+a {
+    color:#000;
+    text-decoration:none;
+}
+a:hover {
+    text-decoration:underline;
+}
+ul {
+    list-style:none;
+}
+body {
+    font-size:12px;
+    line-height:22px;
+}
+#hbwrap {
+    width:960px;
+    margin:0 auto;
+}
+.hbcjl {
+    float:left;
+    width:290px;
+    padding:10px 0 10px 10px;
+    overflow:hidden;
+}
+.hbcjl .read {
+    border-right:#e4e4e4 1px solid;
+    padding:0 20px 0 0;
+    margin:10px 0 0 0;
+    float:left;
+    width:258px;
+}
+.hbcjl .jhdd {
+    border-right:#e4e4e4 1px solid;
+    padding:0 14px 0 0;
+    float:left;
+    width:264px;
+}
+.hbstock {
+    width:100%;
+    float:left;
+}
+.hbstocktit {
+    background:#fcfcfc;
+    color:#666;
+    font-size:12px;
+    float:left;
+    width:280px;
+    padding-left:8px;
+    border:#ddd 1px solid;
+    border-bottom:0;
+    line-height:26px;
+}
+body {
+    background:#F9F9F9;
+}
+#time_show strong {
+    font-size:14px;
+}
+.col1,.col2,.col3,.col12,.col23 {
+    zoom:1;
+    float:left;
+    display:inline;
+    overflow:hidden;
+}
+.col2 {
+    width:252px;
+}
+.col3 {
+    width:290px;
+    overflow:hidden;
+}
+.col {
+    width:50%;
+    float:left;
+}
+.mod,.tabmod {
+    zoom:1;
+    position:relative;
+    clear:both;
+    margin-bottom:10px;
+    border:1px solid #ddd;
+    border-bottom:0;
+}
+.mod .cnt,.tabmod .cnt {
+    padding:3px;
+    clear:both;
+    background:#FFF;
+}
+.mod h3 {
+    height:24px;
+    line-height:24px;
+    padding-left:10px;
+}
+.md2 h3 {
+    background:url(http://img.hexun.com/r/finance/v2/img/h3_2.gif) left  top  repeat-x;
+}
+.tabmod h3 a {
+    padding-right:10px;
+    background:url(http://img.hexun.com/r/finance/v2/img/more.gif) right  center  no-repeat;
+}
+.c {
+    clear:both;
+}
+.dotline {
+    margin:6px 0;
+    height:1px;
+    overflow:hidden;
+    clear:both;
+    background:url(http://img.hexun.com/r/finance/v2/img/dl.gif) left  top  repeat-x;
+}
+.mb10 {
+    margin-bottom:10px;
+}
+.hide {
+    display:none;
+}
+.client {
+    clear:both;
+    margin:0 auto;
+    text-align:center;
+    zoom:1;
+    margin-bottom:10px;
+}
+td.up {
+    color:#9e1818;
+}
+td.down {
+    color:#1c9432;
+}
+.col3 .tabmod h3 span {
+    width:128px;
+}
+.col3 .tabmod h3 span.nb {
+    width:129px;
+    border-right:0;
+}
+.tm1 h3 span.cur {
+    background:url(http://img.hexun.com/r/finance/v2/img/tabmod.gif) 0 -24px repeat-x;
+}
+.tm1 h3 span {
+    background:url(http://img.hexun.com/r/finance/v2/img/tabmod.gif) 0 0 repeat-x;
+    border-color:#ccc;
+}
+.tm2 h3 span.cur {
+    background:url(http://img.hexun.com/r/finance/v2/img/tabmod.gif) 0 -72px repeat-x;
+}
+.tm2 h3 span {
+    background:url(http://img.hexun.com/r/finance/v2/img/tabmod.gif) 0 -48px repeat-x;
+    border-color:#f1cea4;
+}
+.kline span {
+    cursor:pointer;
+    width:56px;
+    border-right:1px solid #f00;
+    float:left;
+    text-align:center;
+    height:19px;
+    line-height:19px;
+}
+.kline span.nb {
+    width:58px;
+    border-right:0;
+}
+.kline span.cur {
+    padding:0 2px;
+    cursor:default;
+    font-weight:bold;
+}
+.kl_1 span {
+    color:#5d5d5d;
+    border-color:#ddd;
+    background:url(http://ns2.bdstatic.com/static/channel/ui/html/bg_stock_0046582d.png) 0 0 repeat-x;
+}
+.kl_1 span.cur {
+    color:#000;
+    background:#FFF;
+}
+.kl_2 span {
+    color:#5d5d5d;
+    border-color:#f1cea4;
+    background:url(http://img.hexun.com/r/finance/v2/img/tabs.gif) 0 -84px repeat-x;
+}
+.kl_2 span.cur {
+    color:#000;
+    background:url(http://img.hexun.com/r/finance/v2/img/tabs.gif) 0 -103px repeat-x;
+}
+#market {
+    zoom:1;
+}
+#market .cnt {
+    clear:both;
+    padding-left:4px;
+    padding-bottom:0;
+    height:198px;
+    overflow:hidden;
+    margin-top:2px;
+}
+#market td {
+    font-size:12px;
+    color:#666;
+    text-align:center;
+}
+#market td.name {
+    font-size:12px;
+    font-weight:normal;
+}
+#market td.name a {
+    color:#000099;
+}
+#market .up {
+    color:#9e1818;
+}
+#market .down {
+    color:#1c9432;
+}
+#market td {
+    padding:1px 0 1px 0;
+    border-top:1px solid #ccc;
+}
+#market .block td {
+    border:0;
+}
+#market .nb td {
+    border-top:0;
+}
+#market td div {
+    height:0;
+    overflow:hidden;
+    text-align:left;
+}
+#market td div.show {
+    height:118px;
+    overflow:hidden;
+}
+#market .kline a:link,#market .kline a:visited {
+    color:#5d5d5d;
+}
+#sf2 {
+    padding-left:10px;
+    height:30px;
+    padding-top:4px;
+    border-top:1px solid #e2e2e2;
+    background:#cdcdcd url(http://img.hexun.com/r/finance/v2/img/sf2.gif) 0 0 repeat-x;
+}
+.lh2 {
+    line-height:18px;
+}
+.c1 {
+    color:#000;
+}
+.c2 {
+    color:#666;
+}
+.c3 {
+    color:#c40000;
+}
+.lc2 a,.lc2 a:link {
+    color:#666;
+}
+#sl {
+    width:252px;
+    border:1px solid #99bce6;
+    background:#fff;
+}
+#sl .tabs {
+    overflow:hidden;
+}
+#sl .tabs a:visited {
+    color:#5d5d5d;
+}
+#sl .tabs span {
+    cursor:pointer;
+    color:#5d5d5d;
+    text-align:center;
+    height:20px;
+    line-height:20px;
+    float:left;
+    width:83px;
+    border-right:1px solid #99bce6;
+    background:url(http://img.hexun.com/r/finance/v2/img/tabs.gif) 0 -42px repeat-x;
+}
+#sl .tabs span.cur {
+    cursor:default;
+    color:#000;
+    background:url(http://img.hexun.com/r/finance/v2/img/tabs.gif) 0 -62px repeat-x;
+}
+#sl .tabs span.nb {
+    width:84px;
+    border-right:0;
+}
+#sl .tmod {
+    margin:10px;
+    margin-top:6px;
+}
+#sl th {
+    text-align:left;
+    border-bottom:2px solid #c2c2c2;
+}
+#sl td {
+    padding:4px 0;
+    border-bottom:1px solid #e0e0e0;
+}
+.onChangeRed {
+    background:#FF6F72;
+}
+.onChangeGreen {
+    background:#A3FF9D;
+}
+#group1 div {
+    height:28px;
+}
+.col1 {
+    color:#666;
+}
+.col1 .mod h3 {
+    background:url(http://img.hexun.com/r/finance/v2/img/h3_1.gif) no-repeat;
+}
+.col2 .mod h3 {
+    background:url(http://img.hexun.com/r/finance/v2/img/h2_2.gif) no-repeat;
+}
+#col1 .hot {
+    margin-bottom:8px;
+}
+#col1 .dotline {
+    margin:6px 0 6px 0;
+    +margin-bottom:7px;
+}
+#col2  div[class = dotline] {
+    margin:10px 0 9px 0;
+    +margin:7px 0;
+}
+.client table {
+    margin:0 auto;
+    text-align:left;
+}
+.onChangeRed {
+    background:#FF6F72;
+}
+.onChangeGreen {
+    background:#A3FF9D;
+}
+.upRed {
+    color:#FF0000;
+}
+.downGreen {
+    color:#008000;
+}
+.upRedArrow {
+    background:url(http://news.baidu.com/resource/img/plus_minus.gif) 2px -1px no-repeat;
+    color:#FF0000;
+    padding-left:12px;
+}
+.downGreenArrow {
+    background:url(http://news.baidu.com/resource/img/plus_minus.gif) 2px -16px no-repeat;
+    color:#008000;
+    padding-left:12px;
+}</style>
+
+
+</head>
+<body>
+<div class="hbcjl" style="padding-left:0px;padding-top:0px">
+<div class="hbstock">
+<div class="hbstocktit">
+<div id="time_show">2015年09月20日18:40 星期日&nbsp;&nbsp;<strong><font color="#D20000">闭市！</font></strong></div>
+
+</div>
+
+<div class="col3" id="col3">
+<div id="market" class="mod">
+<div class="kline kl_1" id="bdnews_tab">
+<span class="cur"><a href="http://quote.hexun.com/default.htm#stock" target="_blank" onmousedown="p(event, 2, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:1})">A股</a></span>
+<span><a href="http://quote.hexun.com/default.htm#hkstock" target="_blank" onmousedown="p(event, 2, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:2})">港股</a></span>
+<span><a href="http://quote.hexun.com/default.htm#global" target="_blank" onmousedown="p(event, 2, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:3})">全球</a></span>
+<span><a href="http://quote.hexun.com/default.htm#forex" target="_blank" onmousedown="p(event, 2, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:4})">外汇</a></span>
+<span style="border-right:0;"><a href="http://quote.hexun.com/default.htm#futures" target="_blank" onmousedown="p(event, 2, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:5})">期货</a></span>
+</div>
+
+<div class="cnt">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="tab nb" style="cursor: pointer;">
+<td class="name" style="white-space:nowrap;">上证指数</td>
+<td><span id="bfn_la_000001.sh"><span class="upRed">3,097.917</span></span></td>
+<td><span id="bfn_zde_000001.sh"><span class="upRedArrow">11.86</span></span></td>
+<td><span id="bfn_zdf_000001.sh"> <span class="upRedArrow">0.38%</span></span></td>
+</tr>
+<tr class="block">
+<td colspan="4">
+<div class="show">
+<a href="http://stockdata.stock.hexun.com/indexhq_000001_1.shtml" target="_blank"><img src="index_1_000001.png" name="rtmap_000001.sh" border="0" id="rtmap_000001.sh" alt="上证指数" onmousedown="p(event, 3, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:1})"></a>
+</div>
+
+</td>
+</tr>
+<tr class="tab" style="cursor: pointer;">
+    <td class="name">深成指数</td>
+    <td><span id="bfn_la_399001.sz"><span class="upRed">9,850.772</span></span></td>
+    <td><span id="bfn_zde_399001.sz"><span class="upRedArrow">110.88</span></span></td>
+    <td><span id="bfn_zdf_399001.sz"> <span class="upRedArrow">1.14%</span></span></td>
+</tr>
+<tr class="block">
+
+	<td colspan="4">
+		<div>
+		<a href="http://stockdata.stock.hexun.com/indexhq_399001_2.shtml" target="_blank"><img id="rtmap_399001.sz" src="index_1_399001.png" alt="深成指数" onmousedown="p(event, 3, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:1})"></a>
+		</div>
+	</td>
+</tr>
+<tr class="tab" style="cursor: pointer;">
+    <td class="name">沪深300</td>
+    <td><span id="bfn_la_399300.sz"><span class="upRed">3,251.273</span></span></td>
+
+    <td><span id="bfn_zde_399300.sz"><span class="upRedArrow">14.27</span></span></td>
+    <td><span id="bfn_zdf_399300.sz"> <span class="upRedArrow">0.44%</span></span></td>
+</tr>
+<tr class="block">
+	<td colspan="4">
+		<div>
+		<a href="http://stockdata.stock.hexun.com/indexhq_399300_2.shtml" target="_blank"><img id="rtmap_399300.sz" src="index_1_399300.png" alt="沪深300" onmousedown="p(event, 3, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:1})"></a>
+		</div>
+	</td>
+
+</tr>
+</tbody></table>
+</div>
+
+<div class="cnt" style="display:none">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="tab nb" style="cursor: pointer;">
+    <td class="name" style="white-space:nowrap;">香港恒生</td>
+    <td><span id="bfn_la_hsi001.hk"><span class="upRed">21,920.83</span></span></td>
+    <td><span id="bfn_zde_hsi001.hk"><span class="upRedArrow">66.20</span></span></td>
+
+    <td><span id="bfn_zdf_hsi001.hk"> <span class="upRedArrow">0.30%</span></span></td>
+</tr>
+<tr class="block">
+	<td colspan="4">
+		<div class="show">
+			<a href="http://hkquote.stock.hexun.com/urwh/hkstock/90001.shtml" target="_blank"><img id="rtmap_hsi001.hk" src="90001.png" alt="恒生指数" onmousedown="p(event, 3, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:2})"></a>
+		</div>
+	</td>
+</tr>
+<tr class="tab" style="cursor: pointer;">
+
+    <td class="name">红筹指数</td>
+    <td><span id="bfn_la_cci001.hk"><span class="downGreen">4,048.53</span></span></td>
+    <td><span id="bfn_zde_cci001.hk"><span class="downGreenArrow">24.71</span></span></td>
+    <td><span id="bfn_zdf_cci001.hk"> <span class="downGreenArrow">0.61%</span></span></td>
+</tr>
+<tr class="block">
+	<td colspan="4">
+		<div>
+
+		<a href="http://hkquote.stock.hexun.com/urwh/hkstock/90006.shtml" target="_blank"><img id="rtmap_cci001.hk" src="90006.png" alt="红筹指数" onmousedown="p(event, 3, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:2})"></a>
+		</div>
+	</td>
+</tr>
+<tr class="tab" style="cursor: pointer;">
+    <td class="name">国企指数</td>
+    <td><span id="bfn_la_cei001.hk"><span class="upRed">10,028.38</span></span></td>
+    <td><span id="bfn_zde_cei001.hk"><span class="upRedArrow">64.21</span></span></td>
+
+    <td><span id="bfn_zdf_cei001.hk"> <span class="upRedArrow">0.64%</span></span></td>
+</tr>
+<tr class="block">
+	<td colspan="4">
+		<div>
+		<a href="http://hkquote.stock.hexun.com/urwh/hkstock/90007.shtml" target="_blank"><img id="rtmap_cei001.hk" src="90007.png" alt="国企指数" onmousedown="p(event, 3, {c:&#39;finannews&#39;,ct:&#39;0&#39;,a:&#39;27&#39;,col:&#39;501&#39;, pn:2})"></a>
+		</div>
+	</td>
+</tr>
+</tbody></table>
+
+</div>
+
+<div class="cnt" style="display:none">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="nb">
+    <td class="name">道琼斯</td>
+    <td><span id="bfn_la_dji.us"><span class="downGreen">16,384.79</span></span></td>
+    <td><span id="bfn_zde_dji.us"><span class="downGreenArrow">289.95</span></span></td>
+    <td><span id="bfn_zdf_dji.us"> <span class="downGreenArrow">1.74%</span></span></td>
+
+</tr>
+<tr>
+    <td class="name">纳斯达克</td>
+    <td><span id="bfn_la_ixic.us"><span class="downGreen">4,827.23</span></span></td>
+    <td><span id="bfn_zde_ixic.us"><span class="downGreenArrow">66.72</span></span></td>
+    <td><span id="bfn_zdf_ixic.us"> <span class="downGreenArrow">1.36%</span></span></td>
+</tr>
+<tr>
+    <td class="name">标普500</td>
+
+    <td><span id="bfn_la_spi.us"><span class="downGreen">1,958.08</span></span></td>
+    <td><span id="bfn_zde_spi.us"><span class="downGreenArrow">32.12</span></span></td>
+    <td><span id="bfn_zdf_spi.us"> <span class="downGreenArrow">1.61%</span></span></td>
+</tr>
+<tr>
+    <td class="name">英国富时</td>
+    <td><span id="bfn_la_ftse.uk"><span class="downGreen">6,104.11</span></span></td>
+
+    <td><span id="bfn_zde_ftse.uk"><span class="downGreenArrow">82.88</span></span></td>
+    <td><span id="bfn_zdf_ftse.uk"> <span class="downGreenArrow">1.34%</span></span></td>
+</tr>
+<tr>
+    <td class="name">德国DAX</td>
+    <td><span id="bfn_la_dax.de">-</span></td>
+    <td><span id="bfn_zde_dax.de">-</span></td>
+
+    <td><span id="bfn_zdf_dax.de">-</span></td>
+</tr>
+<tr>
+    <td class="name">日经</td>
+    <td><span id="bfn_la_n225.jp"><span class="downGreen">18,070.21</span></span></td>
+    <td><span id="bfn_zde_n225.jp"><span class="downGreenArrow">362.06</span></span></td>
+    <td><span id="bfn_zdf_n225.jp"> <span class="downGreenArrow">1.96%</span></span></td>
+
+</tr>
+<tr>
+    <td class="name">新加坡</td>
+    <td><span id="bfn_la_sti.sg"><span class="downGreen">2,883.48</span></span></td>
+    <td><span id="bfn_zde_sti.sg"><span class="downGreenArrow">44.7</span></span></td>
+    <td><span id="bfn_zdf_sti.sg"> <span class="downGreenArrow">1.53%</span></span></td>
+</tr>
+<tr>
+    <td class="name">台湾加权</td>
+
+    <td><span id="bfn_la_twii.tw"><span class="downGreen">8,767.86</span></span></td>
+    <td><span id="bfn_zde_twii.tw"><span class="downGreenArrow">23.26</span></span></td>
+    <td><span id="bfn_zdf_twii.tw"> <span class="downGreenArrow">0.26%</span></span></td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="cnt" style="display:none">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="nb">
+
+<td class="name">外汇</td>
+<td class="name">最新价</td>
+<td class="name">涨跌额</td>
+<td class="name">昨收价</td>
+</tr>
+<tr>
+<td class="name"><a href="http://quote.forex.hexun.com/USDCNY.shtml" target="_blank">美元/人民币</a></td>
+<td><span id="bfn_la_cnyba.fx"><span class="downGreen">6.3627</span></span></td>
+<td><span id="bfn_zde_cnyba.fx"><span class="downGreenArrow">0.0017</span></span></td>
+<td><span id="bfn_pc_cnyba.fx">6.3644</span></td>
+</tr>
+<tr>
+
+<td class="name"><a href="http://quote.forex.hexun.com/HKDCNY.shtml" target="_blank">港币/人民币</a></td>
+<td><span id="bfn_la_hkcnba.fx"><span class="downGreen">0.8210</span></span></td>
+<td><span id="bfn_zde_hkcnba.fx"><span class="downGreenArrow">0.0002</span></span></td>
+<td><span id="bfn_pc_hkcnba.fx">0.8212</span></td>
+</tr>
+<tr>
+<td class="name"><a href="http://quote.forex.hexun.com/EURCNY.shtml" target="_blank">欧元/人民币</a></td>
+<td><span id="bfn_la_ercnba.fx"><span class="downGreen">7.2701</span></span></td>
+<td><span id="bfn_zde_ercnba.fx"><span class="downGreenArrow">0.0077</span></span></td>
+<td><span id="bfn_pc_ercnba.fx">7.2778</span></td>
+</tr>
+<tr>
+<td class="name"><a href="http://quote.forex.hexun.com/GBPCNY.shtml" target="_blank">英镑/人民币</a></td>
+<td><span id="bfn_la_ukcnba.fx"><span class="upRed">9.9526</span></span></td>
+
+<td><span id="bfn_zde_ukcnba.fx"><span class="upRedArrow">0.0324</span></span></td>
+<td><span id="bfn_pc_ukcnba.fx">9.9202</span></td>
+</tr>
+<tr>
+<td class="name"><a href="http://quote.forex.hexun.com/USDJPY.shtml" target="_blank">美元/日元</a></td>
+<td><span id="bfn_la_usdjpy.fx"><span class="downGreen">119.2400</span></span></td>
+<td><span id="bfn_zde_usdjpy.fx"><span class="downGreenArrow">0.7400</span></span></td>
+<td><span id="bfn_pc_usdjpy.fx">119.9800</span></td>
+</tr>
+<tr>
+<td class="name"><a href="http://quote.forex.hexun.com/EURUSD.shtml" target="_blank">欧元/美元</a></td>
+<td><span id="bfn_la_eurusd.fx"><span class="downGreen">1.1426</span></span></td>
+<td><span id="bfn_zde_eurusd.fx"><span class="downGreenArrow">0.0009</span></span></td>
+<td><span id="bfn_pc_eurusd.fx">1.1435</span></td>
+</tr>
+
+<tr>
+<td class="name"><a href="http://quote.forex.hexun.com/GBPUSD.shtml" target="_blank">英镑/美元</a></td>
+<td><span id="bfn_la_gbpusd.fx"><span class="upRed">1.5642</span></span></td>
+<td><span id="bfn_zde_gbpusd.fx"><span class="upRedArrow">0.0055</span></span></td>
+<td><span id="bfn_pc_gbpusd.fx">1.5587</span></td>
+</tr>
+</tbody></table>
+</div>
+
+<div class="cnt" style="display:none">
+<table cellpadding="0" cellspacing="0" width="100%">
+<tbody><tr class="nb">
+<td class="name">期货品种</td>
+<td class="name">最新价</td>
+
+<td class="name">涨跌额</td>
+<td class="name">涨跌幅</td>
+</tr>
+<tr>
+<td class="name"><a href="http://waipan.futures.hexun.com/default.aspx?code=NYZCOA" target="_blank">NYMEX原油</a></td>
+<td><span id="bfn_la_crude.nme"><span class="downGreen">44.98</span></span></td>
+<td><span id="bfn_zde_crude.nme"><span class="downGreenArrow">1.92</span></span></td>
+<td><span id="bfn_zdf_crude.nme"> <span class="downGreenArrow">4.09%</span></span></td>
+</tr>
+<tr>
+<td class="name"><a href="http://waipan.futures.hexun.com/default.aspx?code=CMZHGA" target="_blank">NYMEX黄金</a></td>
+<td><span id="bfn_la_gold.nme"><span class="upRed">1,139.10</span></span></td>
+<td><span id="bfn_zde_gold.nme"><span class="upRedArrow">22.10</span></span></td>
+
+<td><span id="bfn_zdf_gold.nme"> <span class="upRedArrow">1.98%</span></span></td>
+</tr>
+<tr>
+<td class="name"><a href="http://waipan.futures.hexun.com/default.aspx?code=LMCUD3" target="_blank">伦敦铜</a></td>
+<td><span id="bfn_la_copper.lme"><span class="downGreen">5,233.00</span></span></td>
+<td><span id="bfn_zde_copper.lme"><span class="downGreenArrow">157.00</span></span></td>
+<td><span id="bfn_zdf_copper.lme"> <span class="downGreenArrow">2.91%</span></span></td>
+</tr>
+<tr>
+<td class="name"><a href="http://gold.hexun.com/byxh/" target="_blank">伦敦银</a></td>
+<td><span id="bfn_la_sliver.nme"><span class="upRed">15.15</span></span></td>
+<td><span id="bfn_zde_sliver.nme"><span class="upRedArrow">0.17</span></span></td>
+<td><span id="bfn_zdf_sliver.nme"> <span class="upRedArrow">1.13%</span></span></td>
+</tr>
+<tr>
+
+<td class="name"><a href="http://waipan.futures.hexun.com/default.aspx?code=CBZSAA" target="_blank">CBOT黄豆</a></td>
+<td><span id="bfn_la_soybean.cbt"><span class="downGreen">868.50</span></span></td>
+<td><span id="bfn_zde_soybean.cbt"><span class="downGreenArrow">16.00</span></span></td>
+<td><span id="bfn_zdf_soybean.cbt"> <span class="downGreenArrow">1.81%</span></span></td>
+</tr>
+<tr>
+<td class="name"><a href="http://waipan.futures.hexun.com/default.aspx?code=CBZCNA" target="_blank">CBOT玉米</a></td>
+<td><span id="bfn_la_corn.usb"><span class="downGreen">377.50</span></span></td>
+<td><span id="bfn_zde_corn.usb"><span class="downGreenArrow">2.25</span></span></td>
+<td><span id="bfn_zdf_corn.usb"> <span class="downGreenArrow">0.59%</span></span></td>
+</tr>
+<tr>
+<td class="name"><a href="http://waipan.futures.hexun.com/default.aspx?code=CBZWTA" target="_blank">CBOT小麦</a></td>
+<td><span id="bfn_la_wheat.cbt"><span class="upRed">487.50</span></span></td>
+
+<td><span id="bfn_zde_wheat.cbt"><span class="upRedArrow">6.00</span></span></td>
+<td><span id="bfn_zdf_wheat.cbt"> <span class="upRedArrow">1.25%</span></span></td>
+</tr>
+</tbody></table>
+</div>
+
+</div>
+
+<div style="height:4px; overflow:hidden; width:100%; float:left"></div>
+
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript" src="hx_finance_local.js"></script>
+
+<script type="text/javascript">
+Baidu.util.Event.addListener(window, "load", function(){BFR.init();});
+</script>
+<div id="bdfn_para_autor" style="display:none">{"s1":"HSI001.hk,CCI001.hk,CEI001.hk","s2":"000001.sh,399001.sz,399300.sz,N225.jp,TWII.tw,STI.sg,FTSE.uk,DAX.de,DJI.us,IXIC.us,SPI.us,CRUDE.nme,GOLD.nme,COPPER.lme,SLIVER.nme,SOYBEAN.cbt,CORN.usb,WHEAT.cbt,","s3":"","type":"index","load_intev":"120","bdfn_server" : "http://cjhq.baidu.com/quote","fx_server" : "http://cjhq.baidu.com/quotenew?s2=CNYBA.fx,HKCNBA.fx,ERCNBA.fx,UKCNBA.fx,USDJPY.fx,EURUSD.fx,GBPUSD.fx,"}</div>
+
+<script type="text/javascript">
+    var tm2 = G('market');
+	installTabMod([
+			[G(tm2.tagIs('div')[0]).tagIs('span'),tm2.tagIs('div','cnt')]
+		],'cur');
+</script>
+
+
+
+<div id="csscan-wrapper" style="display: none;"><h2 id="csscan-header">element</h2><table id="csscan-table"><tbody><tr><th colspan="2" id="csscan-header-font" class="csscan-header">Font</th></tr><tr id="csscan-row-font-family"><td id="csscan-property-font-family" class="csscan-property">font-family</td><td id="csscan-value-font-family" class="csscan-value"></td></tr><tr id="csscan-row-font-size"><td id="csscan-property-font-size" class="csscan-property">font-size</td><td id="csscan-value-font-size" class="csscan-value"></td></tr><tr id="csscan-row-font-style"><td id="csscan-property-font-style" class="csscan-property">font-style</td><td id="csscan-value-font-style" class="csscan-value"></td></tr><tr id="csscan-row-font-variant"><td id="csscan-property-font-variant" class="csscan-property">font-variant</td><td id="csscan-value-font-variant" class="csscan-value"></td></tr><tr id="csscan-row-font-weight"><td id="csscan-property-font-weight" class="csscan-property">font-weight</td><td id="csscan-value-font-weight" class="csscan-value"></td></tr><tr id="csscan-row-letter-spacing"><td id="csscan-property-letter-spacing" class="csscan-property">letter-spacing</td><td id="csscan-value-letter-spacing" class="csscan-value"></td></tr><tr id="csscan-row-line-height"><td id="csscan-property-line-height" class="csscan-property">line-height</td><td id="csscan-value-line-height" class="csscan-value"></td></tr><tr id="csscan-row-text-decoration"><td id="csscan-property-text-decoration" class="csscan-property">text-decoration</td><td id="csscan-value-text-decoration" class="csscan-value"></td></tr><tr id="csscan-row-text-align"><td id="csscan-property-text-align" class="csscan-property">text-align</td><td id="csscan-value-text-align" class="csscan-value"></td></tr><tr id="csscan-row-text-indent"><td id="csscan-property-text-indent" class="csscan-property">text-indent</td><td id="csscan-value-text-indent" class="csscan-value"></td></tr><tr id="csscan-row-text-transform"><td id="csscan-property-text-transform" class="csscan-property">text-transform</td><td id="csscan-value-text-transform" class="csscan-value"></td></tr><tr id="csscan-row-white-space"><td id="csscan-property-white-space" class="csscan-property">white-space</td><td id="csscan-value-white-space" class="csscan-value"></td></tr><tr id="csscan-row-word-spacing"><td id="csscan-property-word-spacing" class="csscan-property">word-spacing</td><td id="csscan-value-word-spacing" class="csscan-value"></td></tr><tr id="csscan-row-color"><td id="csscan-property-color" class="csscan-property">color</td><td id="csscan-value-color" class="csscan-value"></td></tr><tr><th colspan="2" id="csscan-header-background" class="csscan-header">Background</th></tr><tr id="csscan-row-background-attachment"><td id="csscan-property-background-attachment" class="csscan-property">bg-attachment</td><td id="csscan-value-background-attachment" class="csscan-value"></td></tr><tr id="csscan-row-background-color"><td id="csscan-property-background-color" class="csscan-property">bg-color</td><td id="csscan-value-background-color" class="csscan-value"></td></tr><tr id="csscan-row-background-image"><td id="csscan-property-background-image" class="csscan-property">bg-image</td><td id="csscan-value-background-image" class="csscan-value"></td></tr><tr id="csscan-row-background-position"><td id="csscan-property-background-position" class="csscan-property">bg-position</td><td id="csscan-value-background-position" class="csscan-value"></td></tr><tr id="csscan-row-background-repeat"><td id="csscan-property-background-repeat" class="csscan-property">bg-repeat</td><td id="csscan-value-background-repeat" class="csscan-value"></td></tr><tr><th colspan="2" id="csscan-header-size" class="csscan-header">Box</th></tr><tr id="csscan-row-width"><td id="csscan-property-width" class="csscan-property">width</td><td id="csscan-value-width" class="csscan-value"></td></tr><tr id="csscan-row-height"><td id="csscan-property-height" class="csscan-property">height</td><td id="csscan-value-height" class="csscan-value"></td></tr><tr id="csscan-row-border-top"><td id="csscan-property-border-top" class="csscan-property">border-top</td><td id="csscan-value-border-top" class="csscan-value"></td></tr><tr id="csscan-row-border-right"><td id="csscan-property-border-right" class="csscan-property">border-right</td><td id="csscan-value-border-right" class="csscan-value"></td></tr><tr id="csscan-row-border-bottom"><td id="csscan-property-border-bottom" class="csscan-property">border-bottom</td><td id="csscan-value-border-bottom" class="csscan-value"></td></tr><tr id="csscan-row-border-left"><td id="csscan-property-border-left" class="csscan-property">border-left</td><td id="csscan-value-border-left" class="csscan-value"></td></tr><tr id="csscan-row-margin"><td id="csscan-property-margin" class="csscan-property">margin</td><td id="csscan-value-margin" class="csscan-value"></td></tr><tr id="csscan-row-padding"><td id="csscan-property-padding" class="csscan-property">padding</td><td id="csscan-value-padding" class="csscan-value"></td></tr><tr id="csscan-row-max-height"><td id="csscan-property-max-height" class="csscan-property">max-height</td><td id="csscan-value-max-height" class="csscan-value"></td></tr><tr id="csscan-row-min-height"><td id="csscan-property-min-height" class="csscan-property">min-height</td><td id="csscan-value-min-height" class="csscan-value"></td></tr><tr id="csscan-row-max-width"><td id="csscan-property-max-width" class="csscan-property">max-width</td><td id="csscan-value-max-width" class="csscan-value"></td></tr><tr id="csscan-row-min-width"><td id="csscan-property-min-width" class="csscan-property">min-width</td><td id="csscan-value-min-width" class="csscan-value"></td></tr><tr id="csscan-row-outline-color"><td id="csscan-property-outline-color" class="csscan-property">outline-color</td><td id="csscan-value-outline-color" class="csscan-value"></td></tr><tr id="csscan-row-outline-style"><td id="csscan-property-outline-style" class="csscan-property">outline-style</td><td id="csscan-value-outline-style" class="csscan-value"></td></tr><tr id="csscan-row-outline-width"><td id="csscan-property-outline-width" class="csscan-property">outline-width</td><td id="csscan-value-outline-width" class="csscan-value"></td></tr><tr><th colspan="2" id="csscan-header-position" class="csscan-header">Positioning</th></tr><tr id="csscan-row-position"><td id="csscan-property-position" class="csscan-property">position</td><td id="csscan-value-position" class="csscan-value"></td></tr><tr id="csscan-row-top"><td id="csscan-property-top" class="csscan-property">top</td><td id="csscan-value-top" class="csscan-value"></td></tr><tr id="csscan-row-bottom"><td id="csscan-property-bottom" class="csscan-property">bottom</td><td id="csscan-value-bottom" class="csscan-value"></td></tr><tr id="csscan-row-right"><td id="csscan-property-right" class="csscan-property">right</td><td id="csscan-value-right" class="csscan-value"></td></tr><tr id="csscan-row-left"><td id="csscan-property-left" class="csscan-property">left</td><td id="csscan-value-left" class="csscan-value"></td></tr><tr id="csscan-row-float"><td id="csscan-property-float" class="csscan-property">float</td><td id="csscan-value-float" class="csscan-value"></td></tr><tr id="csscan-row-display"><td id="csscan-property-display" class="csscan-property">display</td><td id="csscan-value-display" class="csscan-value"></td></tr><tr id="csscan-row-clear"><td id="csscan-property-clear" class="csscan-property">clear</td><td id="csscan-value-clear" class="csscan-value"></td></tr><tr id="csscan-row-z-index"><td id="csscan-property-z-index" class="csscan-property">z-index</td><td id="csscan-value-z-index" class="csscan-value"></td></tr><tr><th colspan="2" id="csscan-header-list" class="csscan-header">List</th></tr><tr id="csscan-row-list-style-image"><td id="csscan-property-list-style-image" class="csscan-property">list-style-image</td><td id="csscan-value-list-style-image" class="csscan-value"></td></tr><tr id="csscan-row-list-style-type"><td id="csscan-property-list-style-type" class="csscan-property">list-style-type</td><td id="csscan-value-list-style-type" class="csscan-value"></td></tr><tr id="csscan-row-list-style-position"><td id="csscan-property-list-style-position" class="csscan-property">list-style-position</td><td id="csscan-value-list-style-position" class="csscan-value"></td></tr><tr><th colspan="2" id="csscan-header-table" class="csscan-header">Table</th></tr><tr id="csscan-row-vertical-align"><td id="csscan-property-vertical-align" class="csscan-property">vertical-align</td><td id="csscan-value-vertical-align" class="csscan-value"></td></tr><tr id="csscan-row-border-collapse"><td id="csscan-property-border-collapse" class="csscan-property">border-collapse</td><td id="csscan-value-border-collapse" class="csscan-value"></td></tr><tr id="csscan-row-border-spacing"><td id="csscan-property-border-spacing" class="csscan-property">border-spacing</td><td id="csscan-value-border-spacing" class="csscan-value"></td></tr><tr id="csscan-row-caption-side"><td id="csscan-property-caption-side" class="csscan-property">caption-side</td><td id="csscan-value-caption-side" class="csscan-value"></td></tr><tr id="csscan-row-empty-cells"><td id="csscan-property-empty-cells" class="csscan-property">empty-cells</td><td id="csscan-value-empty-cells" class="csscan-value"></td></tr><tr id="csscan-row-table-layout"><td id="csscan-property-table-layout" class="csscan-property">table-layout</td><td id="csscan-value-table-layout" class="csscan-value"></td></tr><tr><th colspan="2" id="csscan-header-effects" class="csscan-header">Effects</th></tr><tr id="csscan-row-text-shadow"><td id="csscan-property-text-shadow" class="csscan-property">text-shadow</td><td id="csscan-value-text-shadow" class="csscan-value"></td></tr><tr id="csscan-row--webkit-box-shadow"><td id="csscan-property--webkit-box-shadow" class="csscan-property">-webkit-box-shadow</td><td id="csscan-value--webkit-box-shadow" class="csscan-value"></td></tr><tr id="csscan-row-border-radius"><td id="csscan-property-border-radius" class="csscan-property">border-radius</td><td id="csscan-value-border-radius" class="csscan-value"></td></tr><tr><th colspan="2" id="csscan-header-other" class="csscan-header">Other</th></tr><tr id="csscan-row-overflow"><td id="csscan-property-overflow" class="csscan-property">overflow</td><td id="csscan-value-overflow" class="csscan-value"></td></tr><tr id="csscan-row-cursor"><td id="csscan-property-cursor" class="csscan-property">cursor</td><td id="csscan-value-cursor" class="csscan-value"></td></tr><tr id="csscan-row-visibility"><td id="csscan-property-visibility" class="csscan-property">visibility</td><td id="csscan-value-visibility" class="csscan-value"></td></tr></tbody></table></div><iframe id="df1" style="border: 0px; width: 0px; height: 0px;"></iframe><iframe id="df3" style="border: 0px; width: 0px; height: 0px;"></iframe></body></html>
