@@ -2,7 +2,7 @@
 v0.0.0项目配置
 
 域名配置:
-<VirtualHost *:80>
+<VirtualHost *:80>k
     DocumentRoot "d:\wamp\www\static"
     ServerName static.com
 </VirtualHost>

