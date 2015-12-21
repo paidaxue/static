@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="jquery,ui,easy,easyui,web">
+	<meta name="description" content="easyui help you build your web page easily!">
+	<title>Calculate two column values in editing DataGrid - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+	<script type="text/javascript" src="../easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+	<script>
+		$(function(){
+			var lastIndex;
+			$('#tt').datagrid({
+				onClickRow:function(rowIndex){
+					if (lastIndex != rowIndex){
+						$('#tt').datagrid('endEdit', lastIndex);
+						$('#tt').datagrid('beginEdit', rowIndex);
+						setEditing(rowIndex);
+					}
+					lastIndex = rowIndex;
+				}
+			});
+		});
+		function setEditing(rowIndex){
+			var editors = $('#tt').datagrid('getEditors', rowIndex);
+			var priceEditor = editors[0];
+			var amountEditor = editors[1];
+			var costEditor = editors[2];
+			priceEditor.target.bind('change', function(){
+				calculate();
+			});
+			amountEditor.target.bind('change', function(){
+				calculate();
+			});
+			function calculate(){
+				var cost = priceEditor.target.val() * amountEditor.target.val();
+				$(costEditor.target).numberbox('setValue',cost);
+			}
+		}
+	</script>
+</head>
+<body>
+	<h2>Calculate two column values in editing DataGrid</h2>
+	
+	<table id="tt" style="width:600px;height:auto"
+			title="Editable DataGrid with Calculated Column" iconCls="icon-edit" singleSelect="true"
+			idField="itemid" url="data/datagrid_data.json">
+		<thead>
+			<tr>
+				<th field="itemid" width="80">Item ID</th>
+				<th field="listprice" width="80" align="right" editor="{type:'numberbox',options:{precision:1}}">List Price</th>
+				<th field="amount" width="80" align="right" editor="{type:'numberbox',options:{precision:0}}">Amount</th>
+				<th field="unitcost" width="80" align="right" editor="numberbox">Unit Cost</th>
+				<th field="attr1" width="150" editor="text">Attribute</th>
+				<th field="status" width="60" align="center" editor="{type:'checkbox',options:{on:'P',off:''}}">Status</th>
+			</tr>
+		</thead>
+	</table>	
+</body>
+</html>
