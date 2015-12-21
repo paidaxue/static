@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="keywords" content="jquery,ui,easy,easyui,web">
+	<meta name="description" content="easyui help you build your web page easily!">
+	<title>DataGrid Footer - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../easyui/themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../easyui/themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../easyui/demo/demo.css">
+	<script type="text/javascript" src="../easyui/jquery.min.js"></script>
+	<script type="text/javascript" src="../easyui/jquery.easyui.min.js"></script>
+</head>
+<body>
+	<h2>DataGrid Footer Demo</h2>
+	<div class="demo-info" style="margin-bottom:10px">
+		<div class="demo-tip icon-tip">&nbsp;</div>
+		<div>The summary informations can be displayed in footer rows.</div>
+	</div>
+	
+	<table id="tt" title="DataGrid" class="easyui-datagrid" style="width:700px;height:250px"
+			url="data/datagrid17_data.json"
+			fitColumns="true" rownumbers="true" showFooter="true">
+		<thead>
+			<tr>
+				<th field="name" width="80">Product Name</th>
+				<th field="price" width="40" align="right">Unit Price</th>
+			</tr>
+		</thead>
+	</table>
+</body>
+</html>
